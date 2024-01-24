@@ -1,0 +1,21 @@
+.feed-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    justify-content: center;
+    align-items: center;
+    input {
+        margin-bottom: 15px;
+        height: 50px;
+        width: 360px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.10);
+        border: none;
+        padding: 0 15px;
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

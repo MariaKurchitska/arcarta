@@ -1,0 +1,100 @@
+.footer{
+    padding-top: 136px;
+    &__wrapper{
+        display: grid; 
+        grid-template-columns: minmax(422px, auto) repeat(3, minmax(108px, auto));
+        grid-template-rows: minmax(340px, auto) 76px;
+        column-gap: 108px;
+        row-gap: 35px;
+    }
+    &__descr{
+        width: 313px;
+        margin-top: 19px;
+        color: #313131;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+    &__subtitle{
+        margin-top: 25px;
+        color: #313131;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px; 
+    }
+    &__sublogo{
+        margin-top: 10px;
+    }
+    &__text{
+        width: 314px;
+        margin-top: 20px;
+        color: #D3D3D3;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    &__corp{
+            width: 314px;
+            margin-top: 20px;
+            color: #D3D3D3;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            &:hover{
+                color: $main-color;
+            }
+    }
+    &__caption{
+        padding-bottom: 12px;
+        color: #333;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px; 
+    }
+    &__links{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+    li{
+        margin-top: 7px;
+        list-style-type: none;
+    }
+    a{
+        color: #313131;
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: minmax(161px, auto) minmax(204px, auto);
+        column-gap: 770px;
+
+    }
+    &__social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center
+    }
+    &__privacy{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        }
+    a.footer__privacy{
+        color: #D3D3D3;
+        text-decoration: none;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    &__media{
+        &:hover{
+            svg path{
+                fill: $second-color;
+            }
+        }
+    }
+}

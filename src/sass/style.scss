@@ -1,0 +1,31 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+a.btn{
+    text-decoration: none;
+}
+
+@import 'base/variables';
+@import 'blocks/titles';
+@import 'blocks/button';
+@import 'blocks/header';
+@import 'blocks/picture';
+@import 'blocks/info';
+@import 'blocks/promo';
+@import 'blocks/insight';
+@import 'blocks/footer';
+@import 'base/animation';
+@import 'blocks/form';
+@import 'blocks/modal';
+@import 'blocks/media';

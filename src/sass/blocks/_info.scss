@@ -1,0 +1,145 @@
+.info{
+    padding-top: 130px;
+    background: linear-gradient(rgba(255, 248, 238, 1) , #FFF);
+    &__content{
+        display: none;
+        &_active {
+            display: grid;
+            grid-template: repeat(2, minmax(498px, auto)) / repeat(2, 498px);
+            grid-auto-rows: minmax(498px, auto);
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+    &-item{
+        border-radius: 10px;
+        border: 1px solid #DDD;
+        background: #FFFAF2;
+        box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 34px;
+        &__img{
+            display: block;
+            margin: 0 auto;
+            min-height: 220px;
+            width: 220px;
+        }
+        &__subtitle{
+            width: 335px;
+            margin: 0 auto;
+            margin-top: 26px;
+            color: #322F2E;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 52px;
+        }
+        &__descr{
+            margin: 17px 26px 23px 26px;
+            color: #322F2E;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        &__link{
+            display: block;
+            margin: 0 auto;
+            padding: 11px 24px;
+            background: rgba(255, 250, 242, 1);
+            border-radius: 50px;
+            border: 2px solid #E1DED9;
+            color: #000;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+            transition: 0.3s all;
+            &:hover {
+                background: $second-color;
+                color: inherit;
+                color: #fff;
+            }
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 50px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            transition: 0.5s all;
+            list-style-type: none;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li {
+                position: relative;
+                color: #322F2E;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $second-color;
+                    left: -14px;
+                    top: 7px;
+                    }
+            }
+        }
+        &__back {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            padding: 11px 24px;
+            width: 150px;
+            background: rgba(255, 250, 242, 1);
+            border-radius: 50px;
+            border: 2px solid #E1DED9;
+            text-align: center;
+            line-height: 20px;
+            transition: 0.3s all;
+            &:hover {
+                background: $second-color;
+                color: inherit;
+                color: #fff;
+            }
+            &::before{
+                display: none;
+            }
+            button{
+                border: none;
+                background: none;
+                color: #000;
+                font-size: 15px;
+                font-weight: 700;
+                transition: 0.3s all;
+                &:hover {
+                    background: $second-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

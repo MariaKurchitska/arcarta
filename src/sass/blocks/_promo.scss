@@ -1,0 +1,102 @@
+.promo{
+    padding-top: 170px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 220px 470px;
+        column-gap: 85px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        padding: 19px 22px 23px 25px ;
+        width: 220px;
+        height: 260px;
+        border-radius: 10px;
+        background: #32686F;
+        box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.55);
+        &-img{
+            margin-top: 23px;
+            display: flex;
+            min-height: 37px;
+        }
+    }
+    &__page{
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+    &__title{
+        margin-top: 12px;
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px; 
+    }
+    &__links{
+        margin-top: 32px;
+        padding-top: 7px;
+        width: 173px;
+        height: 30px;
+        border-top: solid 1px #FFFFFF;
+    }
+    &__link{
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    &__arrow{
+        padding: 2px 0 2px 114px;
+    }
+    &__text{
+        margin: 0;
+        color: #322F2E;
+        font-size: 53px;
+        font-weight: 700;
+        line-height: 62px; 
+    }
+    &__descr{
+        color: #322F2E;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 33px; 
+    }
+    &__column{
+        display: grid;
+        grid-template-columns: 470px;
+        grid-template-rows: 25px minmax(186px, auto) minmax(66px, auto) minmax(60px, auto);
+        grid-auto-rows: minmax(25px, auto);
+        row-gap: 22px;
+    }
+    &__tab{
+        width: 51px;
+        height: 25px;
+        background: $second-color;
+        color: #FFF;   
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 3px 14px;
+    }
+    &__button{
+        display: grid;
+        padding: 11px 28px;
+        width: 146px;
+        border-radius: 50px;
+        border: 2px solid #E1DED9;
+        background: #FFFFFF;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px; 
+        transition: 0.3s all;
+        &:hover{
+            background: $second-color;
+            color: inherit;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    }
+}
+
